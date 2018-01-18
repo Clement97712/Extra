@@ -1,0 +1,57 @@
+.color{
+  color:red;
+}
+
+.picture{
+  border-radius: 100%;
+}
+
+.Wit-container{
+  display: flex;
+  justify-content: space-around;
+}
+.Wit-app{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  }
+  .Wit-texteCache{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: absolute;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #7f7f7f;
+  width: 10%;
+  opacity: 0;
+  height: 100px;
+  transition: opacity 500ms ease-in, width 500ms ease-out;
+  -moz-transition : opacity 500ms ease-in, width 500ms ease-out;
+  -webkit-transition : opacity 500ms ease-in, width 500ms ease-out;
+}
+.Wit-text{
+  font-size: 90%;
+}
+.Wit-texteCache:hover{
+  width: 33%;
+  opacity: 1;
+}
+@media (max-width:640px){
+  .Wit-texteCache{
+    font-size:70%;
+    position: absolute;
+  }
+  .Wit-texteCache:hover{
+    width: 70%;
+  }
+  .Wit-container{
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+  }
+}
+
